@@ -16,8 +16,24 @@
 	// 3. Echo out the results in a user-friendly way.
 	// ===========================================================
 
+	$pizza = [
+		'price' => 19,
+		'toppingPrice' => 5,
+		'deliveryFee' => 4.50,
+		'numberOrderedPizzas' => 6,
+		'numberToppingsPerPizza' => 1,
+		'numberPeopleAtTable' => 6,
+		'slices' => 8,
+	];
 
-	
+	$prijsTotalePizza = $pizza['price'] * 6;
+	$prijsTotaleTopping = $pizza['toppingPrice'] * 6;
+	$prijsTotaal = $prijsTotalePizza + $prijsTotaleTopping;
+	$slicesTotaal = $pizza['slices'] * 8;
+
+	echo "<p> De totale prijs voor de tafel is: ", $prijsTotaal, "$ </p>";
+	echo "<p> Elk persoon krijgt ", $pizza['slices'], " pizza slices, wat in totaal: ",  $slicesTotaal , " pizza slices is. </p>";
+
 	// Time: ?
 	// Record: 6:59 Falco (2025)
 	// Ready? Push to GIT!

@@ -22,11 +22,15 @@
 
 		//========== Assignment (and string) operators
 		
+		$d = 'iets'; // assigment operator
+		$d .= 'iets nog iets'; // . voegt een string toe
+
+		echo $d;
 
 
 
 		//========== Arithmetic assignment operators
-		
+		$basisGetal = 10;
 
 
 		
